@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #04AA6D;
+}
+
+.shadow_white{
+    box-shadow: 5px 5px 5px gray;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin-top: 200px;
+    border: 2px solid white;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+html, body {
+    height:100%;
+}
