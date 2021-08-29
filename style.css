@@ -34,7 +34,6 @@ li a:hover {
     backdrop-filter: blur(10px);
     width: 80%;
     margin-top: 200px;
-    border: 2px solid white;
 }
 
 body{

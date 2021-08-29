@@ -9,8 +9,19 @@
     <link href="style.css" rel="stylesheet">
 
 </head>
+<?php
+$bgs = ['images/beacon.png', 'images/stash.png', 'images/whole_world.png', 'images/bunker.png'];
+$bg = $bgs[rand(0,sizeof($bgs)-1)];
+$text_style = "";
+$borders = "border: 2px solid white;";
+if ($bg == "images/stash.png"){
+    $text_style = $text_style. " color: white;";
+} else {
+    $borders = "border: 2px solid black;";
+}
 
-<body background="images/map_2.png">
+?>
+<body background="<?php echo $bg; ?>">
 <ul>
 
     <li style="float:left"><a class="active" href="#info">About</a></li>
@@ -19,22 +30,22 @@
 
 <section id="info">
     <center>
-        <div class="shadow_white">
-            <h1>Hello <?php echo $_SERVER['REMOTE_ADDR'] ?>!</h1>
-            <h2 style="float: left">About</h2>
+        <div class="shadow_white" style="<?php echo $borders; ?>">
+            <h1 style="<?php echo $text_style ?>">Hello <?php echo $_SERVER['REMOTE_ADDR'] ?>!</h1>
+            <h2 style="float: left; <?php echo $text_style ?>">About</h2>
             <br><br>
-            <h3 style="float: left">Me</h3>
+            <h3 style="float: left; <?php echo $text_style ?>">Me</h3>
             <br><br>
-            <h5 style="float: left">
+            <h5 style="float: left; <?php echo $text_style ?>">
 
                 yoooo! I am satyamedh, a 13 year old short guy. I'm into programming, and electronics in general. I know python, HTML, css, js, java, kotlin, PHP and c#.
                 studying 8th grade
             </h5>
             <br><br>
-            <h3 style="float: left">This site</h3>
+            <h3 style="float: left; <?php echo $text_style ?>">This site</h3>
             <br><br>
-            <h5 style="float: left; white-space: pre-line;">
-                This site serves 2 reasons, for me to learn PHP and to act like my blog. the background of this page is actually the map of a minecraft server, which is for me and my friends :), ik it's streched rn but I'll fix it later(it's 12am, if I'm seen playing MC then gone). you can convert your map_#### to such a png <a href="mctool/map2png/index.php">here</a>
+            <h5 style="float: left; <?php echo $text_style ?>">
+                This site serves 2 reasons, for me to learn PHP and to act like my blog.
             </h5>
         </div>
     </center>
