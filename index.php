@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link href="style.css" rel="stylesheet">
-
+    <script async="async" src="https://arc.io/widget.min.js#x2EhNawj"></script>
 </head>
 <?php
 $bgs = ['images/beacon.png', 'images/stash.png', 'images/whole_world.png', 'images/bunker.png'];
@@ -38,8 +38,7 @@ if ($bg == "images/stash.png"){
             <br><br>
             <h5 style="float: left; <?php echo $text_style ?>">
 
-                yoooo! I am satyamedh, a 13 year old short guy. I'm into programming, and electronics in general. I know python, HTML, css, js, java, kotlin, PHP and c#.
-                studying 8th grade
+                yoooo I am satyamedh! I'm into programming, and electronics in general. I know python, HTML, css, js, java, kotlin, PHP and c#.
             </h5>
             <br><br>
             <h3 style="float: left; <?php echo $text_style ?>">This site</h3>
