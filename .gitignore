@@ -1,2 +1,5 @@
 *.dat
 mctool/map2png/uploads/*.png
+passwd.txt
+recaptcha.txt
+config.json
