@@ -37,9 +37,12 @@ if (($bg == "images/stash.png") || ($bg == "images/throne.png")){
         <h5>My emails: <a href="mailto:me@satyamedh.ml" target="_blank">me@satyamedh.ml</a>  and <a href="mailto:satyamedh9@gmail.com" target="_blank">satyamedh9@gmail.com</a></h5> <h6>You'll 99% of the time get a response from my gmail tho cuz google doesn't accept mail sent from my IP</h6>
         <br><br><h5>Discord: <a href="https://discord.com/users/605364556465963018" target="_blank"><kbd>! Satyamedh#2579</kbd></a></h5>
         <br><br><hr>
+        <h4>Socials:</h4><br>
         <a href="https://github.com/satyamedh" target="_blank"><button class="btn btn-outline-dark">Github</button></a><br><br>
         <a href="https://twitter.com/SatyamedhH" target="_blank"><button class="btn btn-outline-primary">Twitter</button></a><br><Br>
         <a href="https://www.twitch.tv/satyamedh" target="_blank"><button class="btn btn-outline-secondary">Twitch</button></a><br><br>
+        <a href="https://open.spotify.com/user/oaddeg3bmhapv7nbc4astkjzd" target="_blank"><button class="btn btn-outline-success">Spotify(I don't use it lol)</button></a><br><br>
+        <a href="https://steamcommunity.com/profiles/76561198991421737" target="_blank"><button class="btn btn-outline-secondary">Steam(I don't use it much)</button></a><br><br>
 
 
     </div>
