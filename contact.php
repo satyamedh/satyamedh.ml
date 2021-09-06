@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blogposts</title>
+    <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -23,8 +23,9 @@ if (($bg == "images/stash.png") || ($bg == "images/throne.png")){
 }
 
 ?>
-<body background="<?php echo $bg ?>">
+<body background="<?php echo $bg?>">
 <ul class="ul">
+
     <li style="float:left" class="li"><a class="active" href="/index.php#info">About</a></li>
     <li style="float:left" class="li"><a href="/mctool/index.php">Tools</a></li>
     <li style="float:right" class="li"><a href="/admin.php" class="admin">Admin</a></li>
@@ -32,47 +33,16 @@ if (($bg == "images/stash.png") || ($bg == "images/throne.png")){
     <li style="float:right" class="li"><a href="/contact.php">Contact</a></li>
 </ul>
 <center>
-
-    <?php
-
-    $config = file_get_contents('config.json');
-    $details = json_decode($config, true);
-
-    $host = $details["sql_creds"]["host"];
-    $user = $details["sql_creds"]["user"];
-    $password = $details["sql_creds"]["password"];
-    $dbname = $details["sql_creds"]["dbname"];
-    $dsn = "mysql:host=$host;dbname=$dbname";
+    <div class="shadow_white first" style="<?php echo $text_style; echo $borders;?>">
+        <h5>My emails: <a href="mailto:me@satyamedh.ml" target="_blank">me@satyamedh.ml</a>  and <a href="mailto:satyamedh9@gmail.com" target="_blank">satyamedh9@gmail.com</a></h5> <h6>You'll 99% of the time get a response from my gmail tho cuz google doesn't accept mail sent from my IP</h6>
+        <br><br><h5>Discord: <a href="https://discord.com/users/605364556465963018" target="_blank"><kbd>! Satyamedh#2579</kbd></a></h5>
+        <br><br><hr>
+        <a href="https://github.com/satyamedh" target="_blank"><button class="btn btn-outline-dark">Github</button></a><br><br>
+        <a href="https://twitter.com/SatyamedhH" target="_blank"><button class="btn btn-outline-primary">Twitter</button></a><br><Br>
+        <a href="https://www.twitch.tv/satyamedh" target="_blank"><button class="btn btn-outline-secondary">Twitch</button></a><br><br>
 
 
-    $db = new PDO($dsn, $user, $password);
-    $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-    $qry = $db->prepare('SELECT * FROM website.blogposts;');
-    $qry->execute();
-
-    $res = $qry->fetchAll();
-
-    require __DIR__ . '/vendor/autoload.php';
-
-    $engine = new StringTemplate\Engine;
-
-    for ($i=0;$i<count($res);$i++){
-        $first = "";
-        if ($i == 0) $first = "first";
-        echo $engine->render("
-        
-        <div class='shadow_white {first}' style='{borders} {textstyle} cursor: pointer;' onclick=\"location.href='{link}';\" >
-        
-        <h3 onclick=\"location.href='{link}';\">{title}</h3><label style='float: left' onclick=\"location.href='{link}';\">posted on {date}</label>
-                
-        </div>
-        
-        ", ["borders" => $borders, "textstyle" => $text_style, "title" => $res[$i]["real_title"], "date" => $res[$i]['date'], "link" => "https://satyamedh.ml/blog/". $res[$i]["title"], "first" => $first]);
-    }
-
-    ?>
-
+    </div>
 </center>
 </body>
 </html>
