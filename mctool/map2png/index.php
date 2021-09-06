@@ -26,11 +26,12 @@ if (($bg == "/images/stash.png") || ($bg == "/images/throne.png")){
 
     <li style="float:left" class="li"><a class="active" href="/index.php#info">About</a></li>
     <li style="float:left" class="li"><a href="/mctool/index.php">Tools</a></li>
-    <li style="float:right" class="li"><a href="/admin.php" class="admin">Admin</a></li>    
+    <li style="float:right" class="li"><a href="/admin.php" class="admin">Admin</a></li>
+    <li style="float:left" class="li"><a href="/blogposts.php">Blog</a></li>
 </ul>
 
 <center>
-    <div class="shadow_white" style="<?php echo $borders; ?>">
+    <div class="shadow_white first" style="<?php echo $borders; ?>">
         <h1 style="<?php echo $text_style ?>">Credits to <a href="https://www.reddit.com/user/ExtraStrengthFukitol/" target="_blank">u/ExtraStrengthFukitol</a> for the script, I found it on <a href="https://www.reddit.com/r/Minecraft/comments/ek5yp3/convert_map_dat_to_png_in_114_java/" target="_blank">this</a> reddit thread(after hours of searching :/)</h1>
 
         <h3 style="<?php echo $text_style ?>">To get the map_###.dat file, go to the .minecraft/saves/world_name/data and there should be map files, in MC the map id should be the value of x in map_x.dat. upload it here</h3>

@@ -94,6 +94,7 @@ if (($bg == "images/stash.png") || ($bg == "images/throne.png")){
     <li style="float:left" class="li"><a class="active" href="/index.php#info">About</a></li>
     <li style="float:left" class="li"><a href="/mctool/index.php">Tools</a></li>
     <li style="float:right" class="li"><a href="/admin.php" class="admin">Admin</a></li>
+    <li style="float:left" class="li"><a href="/blogposts.php">Blog</a></li>
 </ul>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8556006122224174"
         crossorigin="anonymous"></script>
@@ -108,7 +109,7 @@ if (($bg == "images/stash.png") || ($bg == "images/throne.png")){
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <center>
-    <div class="shadow_white" style="<?php echo $borders; ?>">
+    <div class="shadow_white first" style="<?php echo $borders; ?>">
         <?php
 
         if(isset($login_successful)) {

@@ -33,6 +33,10 @@
     border-radius: 25px;
     backdrop-filter: blur(10px);
     width: 80%;
+    margin-top: 10px;
+}
+
+.first{
     margin-top: 200px;
 }
 

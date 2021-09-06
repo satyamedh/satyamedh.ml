@@ -28,10 +28,11 @@ if (($bg == "/images/stash.png") || ($bg == "/images/throne.png")){
     <li style="float:left" class="li"><a class="active" href="/index.php#info">About</a></li>
     <li style="float:left" class="li"><a href="/mctool/index.php">Tools</a></li>
     <li style="float:right" class="li"><a href="/admin.php" class="admin">Admin</a></li>
+    <li style="float:left" class="li"><a href="/blogposts.php">Blog</a></li>
 </ul>
 
 <center>
-    <div class="shadow_white" style="<?php echo $borders; ?>">
+    <div class="shadow_white first" style="<?php echo $borders; ?>">
         <a href="map2png/index.php" style="<?php echo $text_style ?>">
             <h5>Convert map_####.dat to a png</h5>
         </a>
